@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "roleName": "PasswordlessReadWrite",
+    "description": "Read and write items in Cosmos DB containers",
+    "assignableScopes": [
+      "/"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+          "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/*",
+          "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/*"
+        ],
+        "notDataActions": []
+      }
+    ]
+  }
+}
